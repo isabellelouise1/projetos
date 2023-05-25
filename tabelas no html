@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> tabelas </title>
+    <style>
+       table{ 
+        -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24); 
+        box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+       }
+        table thead th {
+            background-color: teal;
+            color: whitesmoke;
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: lightgrey;
+            color: black;
+        }
+        table tbody tr:hover td {
+            background-color: lightslategray;
+            color: black;
+            cursor: pointer;
+        }
+        table tfoot td{
+            background-color: crimson;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table summary="Esta tabela se refere a:" border="1" width="250" cellspacing="3" align="center">
+        <thead>
+        <tr> 
+            <th colspan="2"> Tabela </th>
+        </tr>
+        <tr>
+            <th title="Nome Completo">Nome</th>
+            <th> Idade </th>
+        </tr>
+        </thead>
+    <tbody>
+        <tr id="1">
+            <td> Isabelle </td>
+            <td> 19 </td>
+        </tr>
+
+        <tr id="2">
+            <td> Marcelo </td>
+            <td> 40 </td>
+        </tr>
+
+        <tr id="3">
+            <td> Nicolas </td>
+            <td> 26 </td>
+        </tr>
+
+        <tr id="4">
+            <td> Carla </td>
+            <td> 22 </td>
+        </tr>
+
+        <tr id="5">
+            <td> Paulo </td>
+            <td> 35 </td>
+        </tr>
+
+        <tr id="6">
+            <td> Valentina </td>
+            <td> 18 </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td> Total </td>
+            <td> 6 </td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
